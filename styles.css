@@ -72,7 +72,7 @@ p {
 }
 
 .about-items, .ed-items, .experience-items, .community-items {
-    margin: 20px;
+    margin: 15px;
 }
 
 .content {
@@ -88,6 +88,75 @@ ul {
 
 li {
     margin-bottom: 7px;
+}
+
+/*********************************/
+.coding-languages {
+    display: flex !important;
+    text-align: center;
+    justify-content: right;
+}
+
+.language {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgb(90, 89, 89); /* default colour */
+    border: 1px solid rgb(90, 89, 89); /* default colour */
+    font-family: 'Barlow';
+    font-size: 11px;
+    padding: 4px 13px 6px 13px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.go {
+    color: #29BEB0;
+    border: 1px solid #29BEB0;
+}
+
+.js {
+    color: #d8bb00;
+    border: 1px solid #d8bb00;
+}
+
+.css {
+    color: #264de4;
+    border: 1px solid #264de4;
+}
+
+.html {
+    color: #e44d26;
+    border: 1px solid #e44d26;
+}
+
+.python {
+    color: #306998;
+    border: 1px solid #306998;
+}
+
+.jupyter {
+    color: rgb(243, 119, 38);
+    border: 1px solid rgb(243, 119, 38);
+}
+
+.arduino {
+    color: rgb(0, 156, 162);
+    border: 1px solid rgb(0, 156, 162);
+}
+
+.cplusplus, .c {
+    color: rgb(0, 89, 156);
+    border: 1px solid rgb(0, 89, 156);
+}
+
+.arm {
+    color: brown;
+    border: 1px solid brown;
+}
+
+.verilog {
+    color: rgb(52, 135, 199);
+    border: 1px solid rgb(52, 135, 199);
 }
 
 /*********************************/
@@ -138,12 +207,12 @@ li {
 
 .ed-coursework {
     text-align: center;
-    font-size: 16px;
+    /* font-size: 16px; */
     margin-bottom: 8px;
 }
 
 .ed-courses {
-    font-size: 16px;
+    /* font-size: 16px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,7 +225,7 @@ li {
 }
 
 .logo img{
-    width: 200px;
+    width: 170px;
     /* float: right; */
 }
 
@@ -164,7 +233,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 170px;
 }
 
 .job-description {
@@ -179,7 +248,71 @@ li {
     font-weight: bold;
 }
 
-@media (max-width: 700px) {
+/*********EXPERIENCE**************/
+.canada-gov {
+    color: rgb(37, 147, 133);
+}
+
+.lalamove {
+    color: rgb(250, 123, 32);
+}
+
+.footprint {
+    color: rgb( 14, 160, 179);
+}
+
+.chestnotes {
+    color: rgb(2, 156, 35);
+}
+
+.frosh1t9 {
+    color: rgb(160, 68, 191);
+}
+
+.ubc-geeringup {
+    color: rgb(48, 120, 190);
+}
+
+/*********************************/
+.projects {
+    background-color: rgb(53, 23, 64);
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery > img {
+    margin: 10px;
+    width: 14em;
+    height: 10em;
+    cursor: pointer;
+    background-color: white;
+}
+
+/*********************************/
+.community {
+    background-color: rgb(199, 252, 246);
+}
+
+
+/*********************************/
+.certifications {
+    background-color: rgb(156, 56, 57);
+}
+
+.space {
+    margin-bottom: 15px;
+}
+
+.white {
+    color: white;
+}
+
+/*********************************/
+@media (max-width: 770px) {
     .about-text, .job-description {
         margin: 20px;
         width: 100%;
@@ -211,58 +344,8 @@ li {
     .about-items, .ed-items, .experience-items, .community-items {
         margin: 10px;
     }
-}
 
-/*********EXPERIENCE**************/
-.canada-gov {
-    color: rgb(37, 147, 133);
-}
-
-.lalamove {
-    color: rgb(250, 123, 32);
-}
-
-.footprint {
-    color: rgb( 14, 160, 179);
-}
-
-.chestnotes {
-    color: rgb(2, 156, 35);
-}
-
-.frosh1t9 {
-    color: rgb( 160, 68, 191);
-}
-
-.ubc-geeringup {
-    color: rgb(48, 120, 190);
-}
-
-/*********************************/
-.projects {
-    background-color: rgb(53, 23, 64);
-}
-
-
-
-
-
-
-/*********************************/
-.community {
-    background-color: rgb(199, 252, 246);
-}
-
-
-/*********************************/
-.certifications {
-    background-color: rgb(156, 56, 57);
-}
-
-.space {
-    margin-bottom: 15px;
-}
-
-.white {
-    color: white;
+    .gallery {
+        flex-direction: column;
+    }
 }

@@ -1,0 +1,95 @@
+.modal {
+    display: none; /* Hidden by default */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    color: rgb(80, 80, 80);
+    background-color: #fefefe;
+    /* border: 1px solid #888; */
+    max-width: 450px;;
+    position: relative; /* so then the x sign is relative to this container */
+}
+
+/*********************************/
+.project-text {
+    padding: 12px 15px 15px;
+}
+
+.project-text > p {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #c2c2c2;
+    margin: 10px 0;
+}
+
+/*********************************/
+.project-bottom {
+    width: 100%;
+    /* display: inline-block; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.view-project-button {
+    background-color: rgb(53, 23, 64);
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none; /* no need underline */
+    display: inline-block;
+    font-size: 15px;
+}
+
+.no-project-button {
+    background-color: transparent;
+    color: rgb(80, 80, 80);
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none; /* no need underline */
+    display: inline-block;
+    font-size: 14px;
+}
+
+.material-icons{
+    font-size: 15px;
+    vertical-align: text-bottom;
+}
+
+.close {
+    color: #aaaaaa;
+    background-color: transparent;
+    border: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    /* float: right; */
+    right: 0;
+    padding: 7px 15px;
+    outline: none; /* no border when clicked */
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+

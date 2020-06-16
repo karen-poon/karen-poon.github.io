@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="favicon.ico"> -->
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modals.css">
+    <link rel="stylesheet" href="images.css">
+    <!-- <link rel="import" href="modals.html"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <title>Karen Poon | Computer Engineering Student</title>
 </head>
@@ -125,21 +130,328 @@
     <div class="container projects">
         <div class="titles">Projects & Hackathons</div>
         <div class="gallery">
-
-
-            
+            <img src="images/projects/music_visualizer/music_visualizer.jpg" id="image-music-visualizer">
+            <img src="images/projects/econ_calc/econ_calc.png" id="image-econ-calc">
+            <img src="images/projects/age_estimation/age_estimate.png" id="image-age-est">
+        </div>
+        <div class="gallery">
+            <img src="images/projects/utek2020/utek2020.png" id="image-utek2020">
+            <img src="images/projects/seek2019/seek2019.jpg"  id="image-seek2019" class="contain">
+            <img src="images/projects/utrahacks2018/utrahacks.jpg" id="image-utrahacks">
+        </div>
+        <div class="gallery">
+            <img src="images/projects/mapper/mapper.png" id="image-mapper">
+            <img src="images/projects/say_colour/say_colour.png" id="image-say-colour">
+            <img src="images/projects/sokoban/sokoban.png" id="image-sokoban">
         </div>
 
+        <!-- modals -->
+        <div id="modal-music-visualizer" class="modal music-visualizer">
+            <div class="modal-content">
+                <span class="close">&times;</span> <!-- &times is the cross sign "x" for close -->
+                <p>Some text in the Modal..</p> 
+            </div>
+        </div>
 
+        <div id="modal-econ-calc" class="modal econ-calc">
+            <div class="modal-content">
+                <div class="image-slideshow">
+                    <!-- #10094 is the symbol '<' -->
+                    <di class="prev">&#10094;</di>
+                    <!-- #10095 is the symbol '>' -->
+                    <di class="next">&#10095;</di>
 
+                    <div class="myImages images-econ fade">
+                        <img class="contain top" src="images/projects/econ_calc/econ_calc.png">
+                    </div>
+                    <div class="myImages images-econ fade">
+                        <img class="contain" src="images/projects/econ_calc/mockup_desktop.png">
+                    </div>
+                    <div class="myImages images-econ fade">
+                        <img class="contain" src="images/projects/econ_calc/mockup_phone.png">
+                    </div>
+                </div>
 
+                <div class="project-text">
+                    <div class="job-title">Econ Calculator (ECE472 Calculator)</div><hr>
+                    <p>This website is dedicated for students taking ECE472 Engineering Economic Analysis & Entrepreneurship at UofT.</p>
+                    <p>Users can use this website to find the desired <b>interest factors</b> for discrete compounding.</p>
+                    <div class="coding-languages">
+                        <div class="language go">go</div>
+                        <div class="language js">js</div>
+                        <div class="language css">css</div>
+                        <div class="language html">html</div>
+                    </div>
+                </div>
 
+                <div class="project-bottom">
+                    <a class="view-project-button" href="https://ece472-calculator.netlify.app" target="_blank">
+                        <i class="material-icons">launch</i> View Site
+                    </a>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+        </div>
 
+        <div id="modal-age-est" class="modal age-est">
+            <div class="modal-content">
+                <div class="image-slideshow">
+                    <di class="prev">&#10094;</di>
+                    <di class="next">&#10095;</di>
 
+                    <div class="myImages images-age fade">
+                        <img class="contain top" src="images/projects/age_estimation/age_estimate.png">
+                    </div>
+                    <div class="myImages images-age fade">
+                        <img class="contain" src="images/projects/age_estimation/aps360_project_illustrations.png">
+                    </div>
+                    <div class="myImages images-age fade">
+                        <img class="contain" src="images/projects/age_estimation/architecture.png">
+                    </div>
+                    <div class="myImages images-age fade">
+                        <img class="contain" src="images/projects/age_estimation/sample_output.png">
+                    </div>
+                    <div class="myImages images-age fade">
+                        <img class="contain" src="images/projects/age_estimation/sample_processed_data.png">
+                    </div>
+                </div>
 
+                <div class="project-text">
+                    <div class="job-title">Human Age Estimation</div><hr>
+                    <p>A <b>machine learning</b> model (CNN) that estimates human age.</p>
+                    <p>The model contains 3 convolutional, 2 ReLU, 2 MaxPool, and 2 fully-connected layers.
+                        By providing a human face image, it estimates which age group the human belongs to.
+                    </p>
+                    <div class="coding-languages">
+                        <div class="language jupyter">jupyter notebook</div>
+                        <div class="language python">python</div>
+                    </div>
+                </div>
 
+                <div class="project-bottom">
+                    <a class="view-project-button" href="https://github.com/karen-poon/aps360-project" target="_blank">
+                        <i class="material-icons">launch</i> View Project
+                    </a>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+        </div>
 
+        <div id="modal-utek2020" class="modal utek2020">
+            <div class="modal-content">
+                <div class="image-slideshow">
+                    <di class="prev">&#10094;</di>
+                    <di class="next">&#10095;</di>
 
+                    <div class="myImages images-utek2020 fade">
+                        <img class="contain top" src="images/projects/utek2020/utek2020.png">
+                    </div>
+                    <div class="myImages images-utek2020 fade">
+                        <img class="contain" src="images/projects/utek2020/failed_oops.gif">
+                    </div>
+                    <div class="myImages images-utek2020 fade">
+                        <img class="contain" src="images/projects/utek2020/utek_logo.png">
+                    </div>
+                </div>
+
+                <div class="project-text">
+                    <div class="job-title">UTEK 2020 - Timbit Unloading Robotic Car</div><hr>
+                    <p>I have participated in the <b>UTEK 2020 Senior Design Competition</b> as a team of 4.</p>
+                    <p>We have to design and make a prototype of a robotic car that delivers timbits to each house 
+                        autonomously within 6 hours.
+                        Although not successful due to some malfunctioning hardware, we had a lot of fun designing it!
+                    </p>
+                    <div class="coding-languages">
+                        <div class="language arduino">arduino</div>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <a class="view-project-button" href="https://github.com/karen-poon/utek2020" target="_blank">
+                        <i class="material-icons">launch</i> View Project
+                    </a>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-seek2019" class="modal seek2019">
+            <div class="modal-content">
+                <div class="image-slideshow">
+                    <di class="prev">&#10094;</di>
+                    <di class="next">&#10095;</di>
+
+                    <div class="myImages images-seek2019 fade">
+                        <img class="contain top" src="images/projects/seek2019/seek2019.jpg">
+                    </div>
+                    <div class="myImages images-seek2019 fade">
+                        <img class="contain" src="images/projects/seek2019/rotate_car.gif">
+                    </div>
+                    <div class="myImages images-seek2019 fade">
+                        <img class="contain" src="images/projects/seek2019/seek_poster.jpg">
+                    </div>
+                </div>
+
+                <div class="project-text">
+                    <div class="job-title">SEEK 2019 - Robotic Car</div><hr>
+                    <p>I have participated in the <b>SEEK 2019 Space Engineering Exploration Kompetition</b> as a team of 3.</p>
+                    <p>We have to design and program a robotic car that can be controlled by cellphones through Bluetooth
+                        and detect objects autonomously.
+                        For some reason the car just keeps on rotating by itself 😂.
+                    </p>
+                    <div class="coding-languages">
+                        <div class="language arduino">arduino</div>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <a class="no-project-button">404 Not Found 😢</a>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-utrahacks" class="modal utrahacks">
+            <div class="modal-content">
+                <div class="image-slideshow">
+                    <di class="prev">&#10094;</di>
+                    <di class="next">&#10095;</di>
+
+                    <div class="myImages images-utrahacks fade">
+                        <img class="contain top" src="images/projects/utrahacks2018/utrahacks.jpg">
+                    </div>
+                    <div class="myImages images-utrahacks fade">
+                        <img class="contain" src="images/projects/utrahacks2018/utrahacks_logo.png">
+                    </div>
+                </div>
+
+                <div class="project-text">
+                    <div class="job-title">UtraHacks 2018 - Automated Indoor Watering System</div><hr>
+                    <p>I have participated in the <b>UtraHacks 2018 Hardware Hackathon</b> as a team of 4.</p>
+                    <p>Ever worried about your plants while you're away from home or on a trip? 
+                        We created a device that can water the plants automatically. 
+                        We also applied woodworking skills to build the stand for this device.
+                    </p>
+                    <div class="coding-languages">
+                        <div class="language arduino">arduino</div>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <a class="view-project-button" href="https://github.com/karen-poon/utrahacks2018" target="_blank">
+                        <i class="material-icons">launch</i> View Project
+                    </a>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-mapper" class="modal mapper">
+            <div class="modal-content">
+                <div class="image-slideshow">
+                    <di class="prev">&#10094;</di>
+                    <di class="next">&#10095;</di>
+
+                    <div class="myImages images-mapper fade">
+                        <img class="contain top" src="images/projects/mapper/mapper.png">
+                    </div>
+                    <div class="myImages images-mapper fade">
+                        <img class="contain" src="images/projects/mapper/night_mode.png">
+                    </div>
+                    <div class="myImages images-mapper fade">
+                        <img class="contain" src="images/projects/mapper/points_of_interest.png">
+                    </div>
+                    <div class="myImages images-mapper fade">
+                        <img class="contain" src="images/projects/mapper/subways.png">
+                    </div>
+                </div>
+
+                <div class="project-text">
+                    <div class="job-title">Nox Mapper Application</div><hr>
+                    <p>This is a map application similar to Google Maps.</p>
+                    <p>Utilizing the OpenStreetMap API, we designed this application from scratch.
+                        It allows users to interact by zooming, searching, finding the shortest route, and more.
+                        Automatic night mode, autocomplete search, distance measuring tool, showing points of interests etc. are features of our map.
+                    </p>
+                    <div class="coding-languages">
+                        <div class="language cplusplus">c++</div>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <a class="no-project-button">Illegal to share the code sorry 😢</a>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-say-colour" class="modal say-colour">
+            <div class="modal-content">
+                <div class="image-slideshow">
+                    <div class="myImages images-colour fade">
+                        <img class="contain top" src="images/projects/say_colour/say_colour.png">
+                    </div>
+                </div>
+
+                <div class="project-text">
+                    <div class="job-title">Say the Colour Not the Word</div><hr>
+                    <p>This is a game that requires players to select the colour of the word, 
+                        not the colour that the word says.</p>
+                    <p>Pretty confusing eh? This is called Stroop Effect.</p>
+                    <div class="coding-languages">
+                        <div class="language c">c</div>
+                        <div class="language arm">arm</div>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <a class="view-project-button" href="https://github.com/karen-poon/stroop_effect_test" target="_blank">
+                        <i class="material-icons">launch</i> View Project
+                    </a>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-sokoban" class="modal sokoban">
+            <div class="modal-content">
+                <div class="image-slideshow">
+                    <di class="prev">&#10094;</di>
+                    <di class="next">&#10095;</di>
+
+                    <div class="myImages images-sokoban fade">
+                        <img class="contain top" src="images/projects/sokoban/sokoban.png">
+                    </div>
+                    <div class="myImages images-sokoban fade">
+                        <img class="contain top" src="images/projects/sokoban/stages.jpg">
+                    </div>
+                    <div class="myImages images-sokoban fade">
+                        <img class="contain top" src="images/projects/sokoban/maze.jpg">
+                    </div>
+                </div>
+
+                <div class="project-text">
+                    <div class="job-title">The Sokoban Game</div><hr>
+                    <p>Sokoban is a Japanese inspired game. 
+                        In our game, player pushes boxes around mazes that we create, 
+                        and the goal is to push them to the targets while bypassing the obstacles.
+                    </p>
+                    <div class="coding-languages">
+                        <div class="language verilog">verilog</div>
+                        <div class="language fpga">fpga</div>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <a class="view-project-button" href="https://github.com/karen-poon/Sokoban_Verilog" target="_blank">
+                        <i class="material-icons">launch</i> View Project
+                    </a>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        
     </div>
 
     <div class="container community">
@@ -245,5 +557,6 @@
     </div>
 
 
-
+    <script src="modals.js"></script>
 </body>
+</html>
