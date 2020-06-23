@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Avenir');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Barlow');
+
 html {
     height: 100%;
 }
@@ -90,73 +94,14 @@ li {
     margin-bottom: 7px;
 }
 
-/*********************************/
-.coding-languages {
-    display: flex !important;
-    text-align: center;
-    justify-content: right;
-}
-
-.language {
-    text-transform: uppercase;
-    background-color: transparent;
-    color: rgb(90, 89, 89); /* default colour */
-    border: 1px solid rgb(90, 89, 89); /* default colour */
-    font-family: 'Barlow';
-    font-size: 11px;
-    padding: 4px 13px 6px 13px;
-    margin-right: 10px;
-    border-radius: 6px;
-}
-
-.go {
-    color: #29BEB0;
-    border: 1px solid #29BEB0;
-}
-
-.js {
-    color: #d8bb00;
-    border: 1px solid #d8bb00;
-}
-
-.css {
-    color: #264de4;
-    border: 1px solid #264de4;
-}
-
-.html {
-    color: #e44d26;
-    border: 1px solid #e44d26;
-}
-
-.python {
-    color: #306998;
-    border: 1px solid #306998;
-}
-
-.jupyter {
-    color: rgb(243, 119, 38);
-    border: 1px solid rgb(243, 119, 38);
-}
-
-.arduino {
-    color: rgb(0, 156, 162);
-    border: 1px solid rgb(0, 156, 162);
-}
-
-.cplusplus, .c {
-    color: rgb(0, 89, 156);
-    border: 1px solid rgb(0, 89, 156);
-}
-
-.arm {
-    color: brown;
-    border: 1px solid brown;
-}
-
-.verilog {
-    color: rgb(52, 135, 199);
-    border: 1px solid rgb(52, 135, 199);
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 /*********************************/
@@ -312,6 +257,23 @@ li {
 }
 
 /*********************************/
+.skills {
+    background-color: rgb(26, 35, 35);
+}
+
+.skills-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+td {
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+/*********************************/
 @media (max-width: 770px) {
     .about-text, .job-description {
         margin: 20px;
@@ -347,5 +309,15 @@ li {
 
     .gallery {
         flex-direction: column;
+    }
+
+    td > .coding-languages {
+        justify-content: center !important;
+        padding-bottom: 10px;
+    }
+
+    td {
+        display: block;
+        text-align: center;
     }
 }
