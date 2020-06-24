@@ -60,6 +60,6 @@
     background-color: rgba(0, 0, 0, 0.445);
 }
 
-.active, .buttons:hover {
+.buttons:hover {
     background-color: #dbdbdb;
 }
