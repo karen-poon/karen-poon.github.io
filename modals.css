@@ -66,9 +66,10 @@ hr {
     font-size: 14px;
 }
 
-.material-icons{
-    font-size: 15px;
+#launch.material-icons {
+    font-size: 15px !important;
     vertical-align: text-bottom;
+    padding-bottom: 2px;
 }
 
 .close {

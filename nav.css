@@ -1,0 +1,76 @@
+nav {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+
+nav ul {
+    margin: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.material-icons {
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+.material-icons:hover, i.active {
+    transform: scale(1.2);
+}
+
+i#person {
+    color: rgb(245, 143, 145);
+}
+i#person:hover, i#person.active {
+    text-shadow: 0px 0px 5px rgb(245, 143, 145), 0px 0px 3px rgb(245, 143, 145);
+}
+
+i#school {
+    color: rgb(42, 89, 177);
+}
+i#school:hover, i#school.active {
+    text-shadow: 0px 0px 5px rgb(42, 89, 177), 0px 0px 3px rgb(42, 89, 177);
+}
+
+i#business_center {
+    color: rgb(255, 182, 72);
+}
+i#business_center:hover, i#business_center.active {
+    text-shadow: 0px 0px 5px rgb(255, 182, 72), 0px 0px 3px rgb(255, 182, 72);
+}
+
+i#laptop_mac {
+    color: rgb(137, 65, 196);
+}
+i#laptop_mac:hover, i#laptop_mac.active {
+    text-shadow: 0px 0px 5px rgb(137, 65, 196), 0px 0px 3px rgb(137, 65, 196);
+}
+
+i#favorite {
+    color: rgb(9, 141, 158);
+}
+i#favorite:hover, i#favorite.active {
+    text-shadow: 0px 0px 5px rgb(9, 141, 158), 0px 0px 3px rgb(9, 141, 158);
+}
+
+i#receipt_long {
+    color: rgb(253, 171, 132);
+}
+i#receipt_long:hover, i#receipt_long.active {
+    text-shadow: 0px 0px 5px rgb(253, 171, 132), 0px 0px 3px rgb(253, 171, 132);
+}
+
+i#memory {
+    color: rgb(202, 202, 14);
+}
+i#memory:hover, i#memory.active {
+    text-shadow: 0px 0px 5px rgb(202, 202, 14), 0px 0px 3px rgb(202, 202, 14);
+}

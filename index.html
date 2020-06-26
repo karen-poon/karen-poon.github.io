@@ -10,23 +10,37 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- <link rel="icon" href="favicon.ico"> -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="modals.css">
     <link rel="stylesheet" href="images.css">
     <link rel="stylesheet" href="lanugage.css">
     <!-- <link rel="import" href="modals.html"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Karen Poon | Computer Engineering Student</title>
 </head>
 
 <body>
-    <div class="coverpage-image">
+    <nav>
+        <ul id="top-menu">
+            <li><a href="#main"><i class="material-icons active" id="person">person</i></a></li>
+            <li><a href="#education"><i class="material-icons" id="school">school</i></a></li>
+            <li><a href="#experience"><i class="material-icons" id="business_center">business_center</i></a></li>
+            <li><a href="#projects"><i class="material-icons" id="laptop_mac">laptop_mac</i></a></li>
+            <li><a href="#community"><i class="material-icons" id="favorite">favorite</i></a></li>
+            <li><a href="#certifications"><i class="material-icons" id="receipt_long">receipt_long</i></a></li>
+            <li><a href="#skills"><i class="material-icons" id="memory">memory</i></a></li>
+        </ul>
+    </nav>
+
+    <div class="coverpage-image"><a name="main" id="main"></a>
         <div class="coverpage-text">
             <h1>Karen Poon</h1>
             <h3>a computer engineering student <br> who likes programming and music</h3>
         </div>
     </div>
 
-    <div class="container about">
+    <div class="container about"><a name="about" id="about"></a>
         <div class="titles">About Me</div>
         <div class="content">
             <div class="about-items about-image"><img src="images/cat.jpg" alt="Karen Poon"></div>
@@ -45,12 +59,12 @@
         </div>
     </div>
 
-    <div class="container education">
+    <div class="container education"><a name="education" id="education"></a>
         <div class="titles">Education</div>
         <div class="education-content">
             <div class="ed-items uoft-image"><img src="images/uoft_logo.svg" alt="University of Toronto"></div>
             <div class="ed-items ed-title">
-                💻 <b>Bachelor of Applied Science</b>, University of Toronto
+                💻 <b>Bachelor of Applied Science in Computer Engineering</b>, University of Toronto
                 <br>
                 (2017 - Present)
             </div>
@@ -86,7 +100,7 @@
         </div>
     </div>
 
-    <div class="container experience">
+    <div class="container experience"><a name="experience" id="experience"></a>
         <div class="titles black">Professional Experience</div>
         <!-- canada gov: web app dev -->
         <div class="content">
@@ -127,7 +141,7 @@
         </div>
     </div>
 
-    <div class="container projects">
+    <div class="container projects"><a name="projects" id="projects"></a>
         <div class="titles">Projects & Hackathons</div>
         <div class="gallery">
             <img src="images/projects/music_visualizer/music_visualizer.jpg" id="image-music-visualizer">
@@ -186,7 +200,7 @@
 
                 <div class="project-bottom">
                     <a class="view-project-button" href="https://ece472-calculator.netlify.app" target="_blank">
-                        <i class="material-icons">launch</i> View Site
+                        <i class="material-icons" id="launch">launch</i> View Site
                     </a>
                     <button class="close">&times;</button>
                 </div>
@@ -231,7 +245,7 @@
 
                 <div class="project-bottom">
                     <a class="view-project-button" href="https://github.com/karen-poon/aps360-project" target="_blank">
-                        <i class="material-icons">launch</i> View Project
+                        <i class="material-icons" id="launch">launch</i> View Project
                     </a>
                     <button class="close">&times;</button>
                 </div>
@@ -269,7 +283,7 @@
 
                 <div class="project-bottom">
                     <a class="view-project-button" href="https://github.com/karen-poon/utek2020" target="_blank">
-                        <i class="material-icons">launch</i> View Project
+                        <i class="material-icons" id="launch">launch</i> View Project
                     </a>
                     <button class="close">&times;</button>
                 </div>
@@ -340,7 +354,7 @@
 
                 <div class="project-bottom">
                     <a class="view-project-button" href="https://github.com/karen-poon/utrahacks2018" target="_blank">
-                        <i class="material-icons">launch</i> View Project
+                        <i class="material-icons" id="launch">launch</i> View Project
                     </a>
                     <button class="close">&times;</button>
                 </div>
@@ -407,7 +421,7 @@
 
                 <div class="project-bottom">
                     <a class="view-project-button" href="https://github.com/karen-poon/stroop_effect_test" target="_blank">
-                        <i class="material-icons">launch</i> View Project
+                        <i class="material-icons" id="launch">launch</i> View Project
                     </a>
                     <button class="close">&times;</button>
                 </div>
@@ -445,7 +459,7 @@
 
                 <div class="project-bottom">
                     <a class="view-project-button" href="https://github.com/karen-poon/Sokoban_Verilog" target="_blank">
-                        <i class="material-icons">launch</i> View Project
+                        <i class="material-icons" id="launch">launch</i> View Project
                     </a>
                     <button class="close">&times;</button>
                 </div>
@@ -455,7 +469,7 @@
         
     </div>
 
-    <div class="container community">
+    <div class="container community"><a name="community" id="community"></a>
         <div class="titles black">Community Involvments</div>
         <!-- footprint -->
         <div class="content">
@@ -529,7 +543,7 @@
         </div>
     </div>
 
-    <div class="container certifications">
+    <div class="container certifications"><a name="certifications" id="certifications"></a>
         <div class="titles">Certifications</div>
         <!-- hkftu: arduino -->
         <div class="content">
@@ -558,7 +572,7 @@
         </div>
     </div>
 
-    <div class="container skills">
+    <div class="container skills"><a name="skills" id="skills"></a>
         <div class="titles">Skills</div>
         <table class="skills-content">
             <tr>
@@ -631,7 +645,7 @@
     </div>
 
     <footer class="container footer">
-        <div id="name">- Karen Poon -</div>
+        <div id="name">- Karen Poon © 2020 -</div>
         <div class="socials">
             <a href="https://www.linkedin.com/in/kawingkarenpoon" class="fa fa-linkedin" target="_blank"></a>
             <a href="https://github.com/karen-poon" class="fa fa-github" target="_blank"></a>
