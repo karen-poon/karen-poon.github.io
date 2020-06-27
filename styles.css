@@ -5,7 +5,7 @@
 
 html {
     height: 100%;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* doesn't work on Safari and old Edge */
 }
 
 body {
@@ -64,6 +64,7 @@ p {
 }
 
 .titles {
+    word-wrap: break-word;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -172,7 +173,7 @@ li {
     transition: 0.5s ease;
 }
 
-.collapsable:hover, .collapsable .active {
+.collapsable:hover, .ed-coursework > .active {
     background-color: rgba(0, 0, 0, 0.712);
 }
 

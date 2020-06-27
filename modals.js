@@ -245,39 +245,6 @@ function closeModal (modal) {
   modal.style.display = "none";
 }
 
-
-
-/*********************************/
-
-// var modalEcon = document.getElementById("modal-econ-calc");
-// var imageEcon = document.getElementById("image-econ-calc");
-// imageEcon.addEventListener("click", function(){
-//     images = document.getElementsByClassName("images-econ");
-//     j = 1;
-// });
-
-// var modalAgeEst = document.getElementById("modal-age-est");
-// var imageAgeEst = document.getElementById("image-age-est");
-// imageEcon.addEventListener("click", function(){
-//     images = document.getElementsByClassName("images-age");
-//     j = 2;
-// });
-
-
-// /* show the first image as initialization */
-// var slideIndex = 1;
-// showImage(slideIndex);
-
-// document.getElementsByClassName("prev")[j-1].onclick = function() {
-//   console.log("prev");
-//     moveImages(-1);
-// }
-
-// document.getElementsByClassName("next")[j-1].onclick = function() {
-//   console.log("next");
-//     moveImages(1);
-// }
-
 function moveImages(n) {
     showImage(slideIndex+=n);
 }
