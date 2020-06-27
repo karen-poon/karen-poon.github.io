@@ -11,18 +11,18 @@
     
 }
 
-.myImages > img, .myImages > video {
+.myImages > img {
     outline: none;
-    height: 340px;
-    width: 450px;
+    height: 300px;
+    width: 400px;
 }
 
-/* @media (max-width: 700px) {
+@media (max-width: 415px) {
     .myImages > img {
-        height: 340px;
-        width: 450px;
+        height: 25vh;
+        width: 100%;
     }
-} */
+}
 
 .contain {
     object-fit: contain;

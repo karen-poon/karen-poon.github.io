@@ -9,7 +9,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -17,18 +16,43 @@
     color: rgb(80, 80, 80);
     background-color: #fefefe;
     /* border: 1px solid #888; */
-    max-width: 450px;;
+    max-width: 400px;
     position: relative; /* so then the x sign is relative to this container */
+    overflow: auto; /* Enable scroll if needed */
+    margin: 8px;
 }
+
+@media (max-width: 415px) {
+    .modal-content {
+        max-width: 70%;
+    }    
+
+    .view-project-button, .no-project-button, .project-text > p {
+        font-size: 13px !important;
+    }
+
+    .project-text > .job-title {
+        font-size: 16px !important;
+    }
+
+    .project-text > .coding-languages > .language {
+        font-size: 10px !important;
+    }
+}
+
 
 /*********************************/
 .project-text {
-    padding: 12px 15px 15px;
+    padding: 12px 15px 8px 15px;
+}
+
+.project-text > .job-title {
+    font-size: 18px;
 }
 
 .project-text > p {
     margin-bottom: 12px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 hr {
@@ -53,7 +77,7 @@ hr {
     text-align: center;
     text-decoration: none; /* no need underline */
     display: inline-block;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .no-project-button {
@@ -64,10 +88,11 @@ hr {
     text-decoration: none; /* no need underline */
     display: inline-block;
     font-size: 14px;
+    max-width: 60%;
 }
 
 #launch.material-icons {
-    font-size: 15px !important;
+    font-size: 14px !important;
     vertical-align: text-bottom;
     padding-bottom: 2px;
 }
@@ -81,7 +106,7 @@ hr {
     position: absolute;
     /* float: right; */
     right: 0;
-    padding: 7px 15px;
+    padding: 5px 15px;
     outline: none; /* no border when clicked */
 }
 
