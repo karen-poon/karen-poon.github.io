@@ -18,7 +18,8 @@
     /* border: 1px solid #888; */
     max-width: 400px;
     position: relative; /* so then the x sign is relative to this container */
-    overflow: auto; /* Enable scroll if needed */
+    overflow-y: auto; /* Enable scroll if needed */
+    overflow-x: hidden;
     margin: 8px;
 }
 
