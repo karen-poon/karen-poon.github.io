@@ -1,12 +1,12 @@
-var images = document.getElementsByClassName("images-econ");
-var slideIndex = 1;
-
 /********** music visualizer **********/
 // Get the modal, display it when clicked
 var modalMusic = document.getElementById("modal-music-visualizer");
 var imageMusic = document.getElementById("image-music-visualizer");
 imageMusic.addEventListener("click", function(){
   displayBlock(modalMusic);
+  images = document.getElementsByClassName("images-music");
+  slideIndex = 1;
+  showImage(slideIndex);
 });
 // close the modal after clicking "x"
 var closeMusic = document.getElementsByClassName("close")[0];

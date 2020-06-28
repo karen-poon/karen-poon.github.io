@@ -40,7 +40,6 @@ body {
 /*********** GLOBAL **************/
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 10px;
@@ -48,9 +47,10 @@ h1 {
 }
 
 h3 {
-    font-family: 'Courier New', sans-serif;
-    font-style: italic;
+    font-family: 'Courier Prime', sans-serif;
+    /* font-style: italic; */
     line-height: 1.5em;
+    font-size: 16px;
 }
 
 p {
@@ -67,7 +67,7 @@ p {
     word-wrap: break-word;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 5px;
@@ -256,6 +256,11 @@ li {
     height: 10em;
     cursor: pointer;
     background-color: white;
+    transition: 0.4s ease-in;
+}
+
+.gallery > img:hover {
+    transform: scale(1.1);
 }
 
 /*********************************/
@@ -286,6 +291,7 @@ li {
     display: flex;
     text-align: center;
     justify-content: center;
+    margin: 10px;
 }
 
 td {

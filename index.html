@@ -4,6 +4,7 @@
     <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow" rel="stylesheet">
@@ -39,7 +40,7 @@
     <div class="coverpage-image"><a name="main"></a>
         <div class="coverpage-text">
             <h1>Karen Poon</h1>
-            <h3>a computer engineering student <br> who likes programming and music</h3>
+            <h3 class="typewriter">|</h3>
         </div>
     </div>
 
@@ -117,8 +118,6 @@
                 </p>
                 <ul>
                     <li>am going to start my PEY soon!</li>
-                    <li>yay</li>
-                    <li>meow</li>
                 </ul>
             </div>
         </div>
@@ -164,20 +163,33 @@
 
         <!-- modals -->
         <div id="modal-music-visualizer" class="modal music-visualizer">
-            <div class="modal-content">
-                <span class="close">&times;</span> <!-- &times is the cross sign "x" for close -->
-                <p>Some text in the Modal..</p> 
+            <div class="modal-content fade">
+                <div class="image-slideshow">
+                    <div class="myImages images-music fade">
+                        <img class="contain top" src="images/projects/music_visualizer/music_visualizer.jpg">
+                    </div>
+                </div>
+
+                <div class="project-text">
+                    <div class="job-title">Music Visualizer</div><hr>
+                    <p>A device that visualizes music patterns onto an LED tube, 
+                        controlled through Bluetooth.</p>
+                    <p>Am still working on it :)</p>
+                    <div class="coding-languages">
+                        <div class="language arduino">arduino</div>
+                    </div>
+                </div>
+
+                <div class="project-bottom">
+                    <a class="no-project-button">Stay tuned...</a>
+                    <button class="close">&times;</button>
+                </div>
             </div>
         </div>
 
         <div id="modal-econ-calc" class="modal econ-calc">
-            <div class="modal-content">
+            <div class="modal-content fade">
                 <div class="image-slideshow">
-                    <!-- #10094 is the symbol '<' -->
-                    <di class="prev">&#10094;</di>
-                    <!-- #10095 is the symbol '>' -->
-                    <di class="next">&#10095;</di>
-
                     <div class="myImages images-econ fade">
                         <img class="contain top" src="images/projects/econ_calc/econ_calc.png">
                     </div>
@@ -187,6 +199,11 @@
                     <div class="myImages images-econ fade">
                         <img class="contain" src="images/projects/econ_calc/mockup_phone.png">
                     </div>
+
+                    <!-- #10094 is the symbol '<' -->
+                    <di class="prev">&#10094;</di>
+                    <!-- #10095 is the symbol '>' -->
+                    <di class="next">&#10095;</di>
                 </div>
 
                 <div class="project-text">
@@ -211,11 +228,8 @@
         </div>
 
         <div id="modal-age-est" class="modal age-est">
-            <div class="modal-content">
+            <div class="modal-content fade">
                 <div class="image-slideshow">
-                    <di class="prev noselect">&#10094;</di>
-                    <di class="next noselect">&#10095;</di>
-
                     <div class="myImages images-age fade">
                         <img class="contain" src="images/projects/age_estimation/age_estimate.png">
                     </div>
@@ -231,6 +245,9 @@
                     <div class="myImages images-age fade">
                         <img class="contain" src="images/projects/age_estimation/sample_processed_data.png">
                     </div>
+
+                    <di class="prev noselect">&#10094;</di>
+                    <di class="next noselect">&#10095;</di>
                 </div>
 
                 <div class="project-text">
@@ -256,11 +273,8 @@
         </div>
 
         <div id="modal-utek2020" class="modal utek2020">
-            <div class="modal-content">
+            <div class="modal-content fade">
                 <div class="image-slideshow">
-                    <di class="prev noselect">&#10094;</di>
-                    <di class="next noselect">&#10095;</di>
-
                     <div class="myImages images-utek2020 fade">
                         <img class="contain top" src="images/projects/utek2020/utek2020.png">
                     </div>
@@ -270,6 +284,9 @@
                     <div class="myImages images-utek2020 fade">
                         <img class="contain" src="images/projects/utek2020/utek_logo.png">
                     </div>
+
+                    <di class="prev noselect">&#10094;</di>
+                    <di class="next noselect">&#10095;</di>
                 </div>
 
                 <div class="project-text">
@@ -294,11 +311,8 @@
         </div>
 
         <div id="modal-seek2019" class="modal seek2019">
-            <div class="modal-content">
+            <div class="modal-content fade">
                 <div class="image-slideshow">
-                    <di class="prev noselect">&#10094;</di>
-                    <di class="next noselect">&#10095;</di>
-
                     <div class="myImages images-seek2019 fade">
                         <img class="contain top" src="images/projects/seek2019/seek2019.jpg">
                     </div>
@@ -308,6 +322,9 @@
                     <div class="myImages images-seek2019 fade">
                         <img class="contain" src="images/projects/seek2019/seek_poster.jpg">
                     </div>
+                    
+                    <di class="prev noselect">&#10094;</di>
+                    <di class="next noselect">&#10095;</di>
                 </div>
 
                 <div class="project-text">
@@ -330,17 +347,17 @@
         </div>
 
         <div id="modal-utrahacks" class="modal utrahacks">
-            <div class="modal-content">
+            <div class="modal-content fade">
                 <div class="image-slideshow">
-                    <di class="prev noselect">&#10094;</di>
-                    <di class="next noselect">&#10095;</di>
-
                     <div class="myImages images-utrahacks fade">
                         <img class="contain top" src="images/projects/utrahacks2018/utrahacks.jpg">
                     </div>
                     <div class="myImages images-utrahacks fade">
                         <img class="contain" src="images/projects/utrahacks2018/utrahacks_logo.png">
                     </div>
+                    
+                    <di class="prev noselect">&#10094;</di>
+                    <di class="next noselect">&#10095;</di>
                 </div>
 
                 <div class="project-text">
@@ -365,11 +382,8 @@
         </div>
 
         <div id="modal-mapper" class="modal mapper">
-            <div class="modal-content">
+            <div class="modal-content fade">
                 <div class="image-slideshow">
-                    <di class="prev noselect">&#10094;</di>
-                    <di class="next noselect">&#10095;</di>
-
                     <div class="myImages images-mapper fade">
                         <img class="contain top" src="images/projects/mapper/mapper.png">
                     </div>
@@ -382,6 +396,9 @@
                     <div class="myImages images-mapper fade">
                         <img class="contain" src="images/projects/mapper/subways.png">
                     </div>
+                    
+                    <di class="prev noselect">&#10094;</di>
+                    <di class="next noselect">&#10095;</di>
                 </div>
 
                 <div class="project-text">
@@ -403,7 +420,7 @@
         </div>
 
         <div id="modal-say-colour" class="modal say-colour">
-            <div class="modal-content">
+            <div class="modal-content fade">
                 <div class="image-slideshow">
                     <div class="myImages images-colour fade">
                         <img class="contain top" src="images/projects/say_colour/say_colour.png">
@@ -431,11 +448,8 @@
         </div>
 
         <div id="modal-sokoban" class="modal sokoban">
-            <div class="modal-content">
+            <div class="modal-content fade">
                 <div class="image-slideshow">
-                    <di class="prev noselect">&#10094;</di>
-                    <di class="next noselect">&#10095;</di>
-
                     <div class="myImages images-sokoban fade">
                         <img class="contain top" src="images/projects/sokoban/sokoban.png">
                     </div>
@@ -445,6 +459,10 @@
                     <div class="myImages images-sokoban fade">
                         <img class="contain top" src="images/projects/sokoban/maze.jpg">
                     </div>
+
+                    
+                    <di class="prev noselect">&#10094;</di>
+                    <di class="next noselect">&#10095;</di>
                 </div>
 
                 <div class="project-text">

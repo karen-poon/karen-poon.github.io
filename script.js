@@ -111,3 +111,33 @@ menu.addEventListener("click", function() {
         this.classList.toggle("active");
     }
 })
+
+/*********************************/
+// the typing effect
+var i = 0;
+var txt = 'a computer engineering student who likes programming and music';
+var typewriter = document.getElementsByClassName("typewriter")[0];
+
+function typing() {
+    if (i < txt.length) {
+        // delete the "|" character at the end of line
+        typewriter.innerHTML = typewriter.innerHTML.substring(0, typewriter.innerHTML.length-1);
+        // insert the next character
+        typewriter.innerHTML += txt.charAt(i);
+        i++;
+        typewriter.innerHTML += "|";
+        setTimeout(typing, 70);
+    } else {
+        // blinking caret looping
+        setInterval(function(){
+            //&nbsp is whitespace
+            typewriter.innerHTML = typewriter.innerHTML.replace("|", "&nbsp");
+            setTimeout(function(){
+                typewriter.innerHTML = typewriter.innerHTML.replace( "&nbsp;", "|");
+                // console.log("hi");
+            }, 500)
+        }, 1000);
+    }
+}
+
+typing();
