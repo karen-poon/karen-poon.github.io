@@ -29,7 +29,6 @@ body {
 }
 
 .coverpage-text {
-    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,6 +43,7 @@ h1 {
     font-weight: 900;
     letter-spacing: 10px;
     margin: 20px;
+    text-align: center;
 }
 
 h3 {
@@ -51,6 +51,7 @@ h3 {
     /* font-style: italic; */
     line-height: 1.5em;
     font-size: 16px;
+    text-align: left;
 }
 
 p {
@@ -351,6 +352,11 @@ footer {
     border: none;
     background: purple;
     transition: 0.5s ease;
+}
+
+i#arrow_up {
+    cursor: pointer;
+    color: rgb(80, 80, 80);
 }
 
 
