@@ -398,6 +398,10 @@ i#arrow_up {
         flex-direction: column;
     }
 
+    .gallery > img:hover {
+        transform: none;
+    }
+
     td > .coding-languages {
         justify-content: center !important;
         padding-bottom: 10px;
