@@ -6,10 +6,12 @@ collapse[0].addEventListener("click", function() {
     var content = this.nextElementSibling;
     if (content.style.display === "flex") {
       content.style.display = "none";
-      collapse[0].firstElementChild.innerText = "\u2B9E Coursework"
+      collapse[0].firstElementChild.children[0].id = "chevron_right";
+      collapse[0].firstElementChild.children[0].innerText = "chevron_right"
     } else {
       content.style.display = "flex";
-      collapse[0].firstElementChild.innerText = "\u2B9F Coursework"
+      collapse[0].firstElementChild.children[0].id = "expand_more";
+      collapse[0].firstElementChild.children[0].innerText = "expand_more"
     }
 });
 
@@ -18,10 +20,12 @@ collapse[1].addEventListener("click", function() {
     var content = this.nextElementSibling;
     if (content.style.display === "flex") {
         content.style.display = "none";
-        collapse[1].firstElementChild.innerText = "\u2B9E Coursework"
+        collapse[1].firstElementChild.children[0].id = "chevron_right";
+      collapse[1].firstElementChild.children[0].innerText = "chevron_right"
     } else {
         content.style.display = "flex";
-        collapse[1].firstElementChild.innerText = "\u2B9F Coursework"
+        collapse[1].firstElementChild.children[0].id = "expand_more";
+      collapse[1].firstElementChild.children[0].innerText = "expand_more"
     }
 });
 
