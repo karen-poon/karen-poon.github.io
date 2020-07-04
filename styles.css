@@ -79,15 +79,8 @@ p {
     color: rgb(80, 80, 80);
 }
 
-.about-items, .ed-items, .experience-items, .community-items {
+.about-items, .ed-items {
     margin: 15px;
-}
-
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 30px 0 30px;
 }
 
 ul {
@@ -192,21 +185,42 @@ li {
 }
 
 .logo img{
-    width: 170px;
-    /* float: right; */
+    max-width: 100px;
+    max-height: 70px;
 }
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    max-width: 100px;
+    max-height: 83px; /* ABRSM cert block has height 83px, all others are only 70px */
+    margin-right: 25px;
 }
 
-.job-description {
-    margin-left: 60px;
-    width: 500px;
-    /* line-height: 1em; */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0 40px 0;
+}
+
+.box {
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);
+    padding: 15px 25px 0 25px;
+    border: 0.1px solid rgba(223, 221, 221, 0.219);
+}
+
+.subject, .info {
+    width: 580px;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.info {
+    flex-direction: column;
+    margin-top: 0;
 }
 
 .job-title {
@@ -362,35 +376,20 @@ i#arrow_up {
 
 /*********************************/
 @media (max-width: 770px) {
-    .about-text, .job-description {
+    .about-text {
         margin: 20px;
         width: 100%;
     }
 
-    .job-title {
+    /* .job-title {
         text-align: center;
-    }
+    } */
 
-    .job-description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .job-description > p {
-        text-align: center;
-    }
-
-    .logo img, .about-image img {
+    .about-image img {
         width: 140px;
     }
 
-    .content {
-        flex-direction: column;
-    }
-
-    .about-items, .ed-items, .experience-items, .community-items {
+    .about-items, .ed-items {
         margin: 10px;
     }
 
@@ -410,5 +409,32 @@ i#arrow_up {
     td {
         display: block;
         text-align: center;
+    }
+}
+
+@media (max-width: 670px) {
+    .box {
+        width: 100%;
+    }
+    .subject, .info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .subject, .info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subject {
+        text-align: center;
+    }
+
+
+
+    .logo {
+        margin: 10px;
     }
 }
