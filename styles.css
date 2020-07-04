@@ -223,6 +223,10 @@ li {
     margin-top: 0;
 }
 
+.info > .coding-languages {
+    align-self: flex-start;
+}
+
 .job-title {
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
