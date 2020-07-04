@@ -29,6 +29,20 @@ collapse[1].addEventListener("click", function() {
     }
 });
 
+collapse[2].addEventListener("click", function() {
+    collapse[2].firstElementChild.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "flex") {
+        content.style.display = "none";
+        collapse[2].firstElementChild.children[0].id = "chevron_right";
+      collapse[2].firstElementChild.children[0].innerText = "chevron_right"
+    } else {
+        content.style.display = "flex";
+        collapse[2].firstElementChild.children[0].id = "expand_more";
+      collapse[2].firstElementChild.children[0].innerText = "expand_more"
+    }
+});
+
 /*********************************/
 // nav bar detect scroll and set active
 // ref: http://jsfiddle.net/mekwall/up4nu/
