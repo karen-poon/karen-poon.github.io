@@ -172,6 +172,10 @@ li {
     transform: translate(-1px, 3px);
 }
 
+.collapsable > .material-icons:hover {
+    transform: translate(-1px, 3px); /* or else it will transition back to (0,0) */
+}
+
 .collapsable:hover, .ed-coursework > .active {
     background-color: rgba(0, 0, 0, 0.712);
 }
