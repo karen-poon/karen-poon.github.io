@@ -223,10 +223,6 @@ li {
     margin-top: 0;
 }
 
-.info > .coding-languages {
-    align-self: flex-start;
-}
-
 .job-title {
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
@@ -385,10 +381,6 @@ i#arrow_up {
         width: 100%;
     }
 
-    /* .job-title {
-        text-align: center;
-    } */
-
     .about-image img {
         width: 140px;
     }
@@ -436,9 +428,11 @@ i#arrow_up {
         text-align: center;
     }
 
-
-
     .logo {
         margin: 10px;
+    }
+
+    .info > .coding-languages {
+        justify-content: center !important;
     }
 }
