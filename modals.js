@@ -1,17 +1,23 @@
 /********** music visualizer **********/
 // Get the modal, display it when clicked
-var modalMusic = document.getElementById("modal-music-visualizer");
-var imageMusic = document.getElementById("image-music-visualizer");
-imageMusic.addEventListener("click", function(){
-  displayBlock(modalMusic);
-  images = document.getElementsByClassName("images-music");
+var modalSnakeGame = document.getElementById("modal-snake-game");
+var imageSnakeGame = document.getElementById("image-snake-game");
+imageSnakeGame.addEventListener("click", function(){
+  displayBlock(modalSnakeGame);
+  images = document.getElementsByClassName("images-snake-game");
   slideIndex = 1;
+  document.getElementsByClassName("prev")[0].onclick = function() {
+    moveImages(-1);
+  }
+  document.getElementsByClassName("next")[0].onclick = function() {
+    moveImages(1);
+  }
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeMusic = document.getElementsByClassName("close")[0];
-closeMusic.onclick = function() {
-  closeModal(modalMusic);
+var closeSnakeGame = document.getElementsByClassName("close")[0];
+closeSnakeGame.onclick = function() {
+  closeModal(modalSnakeGame);
 }
 
 /********** econ calculator **********/
@@ -23,10 +29,10 @@ imageEcon.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-econ");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[1-1].onclick = function() {
+  document.getElementsByClassName("prev")[1].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[1-1].onclick = function() {
+  document.getElementsByClassName("next")[1].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
@@ -46,10 +52,10 @@ imageAgeEst.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-age");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[2-1].onclick = function() {
+  document.getElementsByClassName("prev")[2].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[2-1].onclick = function() {
+  document.getElementsByClassName("next")[2].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
@@ -69,10 +75,10 @@ imageUtek2020.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-utek2020");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[3-1].onclick = function() {
+  document.getElementsByClassName("prev")[3].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[3-1].onclick = function() {
+  document.getElementsByClassName("next")[3].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
@@ -92,10 +98,10 @@ imageSeek2019.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-seek2019");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[4-1].onclick = function() {
+  document.getElementsByClassName("prev")[4].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[4-1].onclick = function() {
+  document.getElementsByClassName("next")[4].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
@@ -115,10 +121,10 @@ imageUtrahacks.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-utrahacks");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[5-1].onclick = function() {
+  document.getElementsByClassName("prev")[5].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[5-1].onclick = function() {
+  document.getElementsByClassName("next")[5].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
@@ -138,10 +144,10 @@ imageMapper.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-mapper");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[6-1].onclick = function() {
+  document.getElementsByClassName("prev")[6].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[6-1].onclick = function() {
+  document.getElementsByClassName("next")[6].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
@@ -177,10 +183,10 @@ imageSokoban.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-sokoban");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[7-1].onclick = function() {
+  document.getElementsByClassName("prev")[7].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[7-1].onclick = function() {
+  document.getElementsByClassName("next")[7].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
@@ -221,7 +227,7 @@ closeMapper.onclick = function() {
 
 // if user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modalMusic) {closeModal(modalMusic);}
+  if (event.target == modalSnakeGame) {closeModal(modalSnakeGame);}
   else if (event.target == modalEcon) {closeModal(modalEcon);}
   else if (event.target == modalAgeEst) {closeModal(modalAgeEst);}
   else if (event.target == modalUtek2020) {closeModal(modalUtek2020);}

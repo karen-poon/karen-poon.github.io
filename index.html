@@ -187,7 +187,7 @@
     <div class="container projects"><a name="projects" id="projects"></a>
         <div class="titles">Projects & Hackathons</div>
         <div class="gallery">
-            <img src="images/projects/music_visualizer/music_visualizer.jpg" id="image-music-visualizer">
+            <img src="images/projects/snake_game/second-stage.png" id="image-snake-game">
             <img src="images/projects/econ_calc/econ_calc.png" id="image-econ-calc">
             <img src="images/projects/age_estimation/age_estimate.png" id="image-age-est">
         </div>
@@ -203,26 +203,40 @@
         </div>
 
         <!-- modals -->
-        <div id="modal-music-visualizer" class="modal music-visualizer">
+        <div id="modal-snake-game" class="modal snake-game">
             <div class="modal-content fade">
                 <div class="image-slideshow">
-                    <div class="myImages images-music fade">
-                        <img class="contain top" src="images/projects/music_visualizer/music_visualizer.jpg">
+                    <div class="myImages images-snake-game fade">
+                        <img class="contain top" src="images/projects/snake_game/first-stage.png">
                     </div>
+                    <div class="myImages images-snake-game fade">
+                        <img class="contain top" src="images/projects/snake_game/second-stage.png">
+                    </div>
+                    <div class="myImages images-snake-game fade">
+                        <img class="contain top" src="images/projects/snake_game/too-bad-game-over.png">
+                    </div>
+
+                    <!-- #10094 is the symbol '<' -->
+                    <di class="prev">&#10094;</di>
+                    <!-- #10095 is the symbol '>' -->
+                    <di class="next">&#10095;</di>
                 </div>
 
                 <div class="project-text">
-                    <div class="job-title">Music Visualizer</div><hr>
-                    <p>A device that visualizes music patterns onto an LED tube, 
-                        controlled through Bluetooth.</p>
-                    <p>Am still working on it :)</p>
+                    <div class="job-title">The Snake Game</div><hr>
+                    <p>I made the traditional snake game with 2 stages using the p5.js library.</p>
+                    <p>My friends enjoyed playing it!</p>
                     <div class="coding-languages">
-                        <div class="language arduino">arduino</div>
+                        <div class="language js">js</div>
+                        <div class="language css">css</div>
+                        <div class="language html">html</div>
                     </div>
                 </div>
 
                 <div class="project-bottom">
-                    <a class="no-project-button">Stay tuned...</a>
+                    <a class="view-project-button" href="https://karen-poon.github.io/snake-game/" target="_blank">
+                        <i class="material-icons" id="launch">launch</i> View Site
+                    </a>
                     <button class="close">&times;</button>
                 </div>
             </div>
