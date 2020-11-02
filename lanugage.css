@@ -122,3 +122,13 @@
     color: lightgreen;
     border: 1px solid lightgreen;
 }
+
+.crm {
+    color: rgb(2, 50, 121);
+    border: 1px solid rgb(2, 50, 121);
+}
+
+.azure-devops {
+    color: rgb(0, 121, 217);
+    border: 1px solid rgb(0, 121, 217);
+}
