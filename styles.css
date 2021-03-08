@@ -41,6 +41,17 @@ h1 {
     text-align: center;
 }
 
+.titles, h2 {
+    word-wrap: break-word;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding: 20px 0 10px 0;
+}
+
 h3 {
     font-family: 'Courier Prime', sans-serif;
     /* font-style: italic; */
@@ -57,17 +68,6 @@ p {
     color: white;
     font-size: 16px;
     padding: 20px;
-}
-
-.titles {
-    word-wrap: break-word;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 5px;
-    padding: 20px 0 10px 0;
 }
 
 .black {
@@ -221,12 +221,12 @@ li {
 
 .box {
     box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);
-    padding: 15px 25px 0 25px;
+    padding: 15px 25px 0;
     border: 0.1px solid rgba(223, 221, 221, 0.219);
 }
 
 .subject, .info {
-    width: 580px;
+    width: 600px;
     display: flex;
     padding-bottom: 15px;
 }
@@ -269,6 +269,10 @@ li {
 
 .ubc-geeringup {
     color: rgb(48, 120, 190);
+}
+
+.oec2022 {
+    color: #55378A;
 }
 
 /*********************************/
@@ -383,6 +387,12 @@ footer {
     border: none;
     background: purple;
     transition: 0.5s ease;
+}
+
+.clubhouse {
+    color: #505050;
+    margin: 5px 0 10px;
+    font-size: 14px;
 }
 
 i#arrow_up {

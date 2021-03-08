@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+  <loc>https://karen-poon.github.io/</loc>
+  <lastmod>2020-11-13T02:53:56+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://karen-poon.github.io/snake-game/</loc>
+  <lastmod>2020-08-11T05:57:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
