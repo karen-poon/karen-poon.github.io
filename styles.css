@@ -149,7 +149,16 @@ li {
 
 .ed-title {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
 }
+
+.ed-content {
+    text-align: center;
+    line-height: 1.7em;
+}
+
 
 .ed-coursework {
     text-align: center;
@@ -184,21 +193,13 @@ li {
     background-color: rgba(0, 0, 0, 0.712);
 }
 
-.ed-courses {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    /* margin-top: 8px; */
-    font-size: 14px;
-}
-
 /*********************************/
 .experience {
     background-color: rgb(255, 250, 232);
 }
 
 .logo img{
-    max-width: 100px;
+    max-width: 70px;
     max-height: 70px;
 }
 
@@ -207,7 +208,6 @@ li {
     align-items: center;
     justify-content: center;
     max-width: 100px;
-    max-height: 83px; /* ABRSM cert block has height 83px, all others are only 70px */
     margin-right: 25px;
 }
 
@@ -273,6 +273,10 @@ li {
 
 .oec2022 {
     color: #55378A;
+}
+
+.peosc {
+    color: #6fa9c1
 }
 
 /*********************************/

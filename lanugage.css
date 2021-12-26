@@ -1,7 +1,6 @@
 .coding-languages {
     display: flex;
     text-align: center;
-    justify-content: right;
     flex-wrap: wrap; /* it won't go over the max width */
 }
 
@@ -58,7 +57,7 @@
     border: 1px solid rgb(0, 156, 162);
 }
 
-.cplusplus, .c {
+.cplusplus, .c, .csharp {
     color: rgb(6, 121, 209);
     border: 1px solid rgb(6, 121, 209);
 }
@@ -128,7 +127,7 @@
     border: 1px solid rgb(2, 50, 121);
 }
 
-.azure-devops {
+.azure-devops, .tfs {
     color: rgb(0, 121, 217);
     border: 1px solid rgb(0, 121, 217);
 }
