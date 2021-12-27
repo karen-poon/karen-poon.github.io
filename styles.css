@@ -243,6 +243,23 @@ li {
 }
 
 /*********EXPERIENCE**************/
+a.company-name {
+    color: #505050;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.company-name:hover{
+    text-decoration: underline;
+}
+
+a.description-link {
+    color: #505050;
+    text-decoration: underline;
+}
+a.description-link:hover {
+    font-weight: bold;
+}
+
 .canada-gov {
     color: rgb(37, 147, 133);
 }
@@ -304,7 +321,7 @@ li {
 }
 
 /*********************************/
-.community {
+.leadership {
     background-color: rgb(199, 252, 246);
 }
 
