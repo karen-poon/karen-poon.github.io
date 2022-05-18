@@ -1,4 +1,4 @@
-var imageInc = 4;
+var imageInc = 3;
 var closeInc = 5;
 
 /********** recipez **********/
@@ -99,7 +99,7 @@ closeACiibo.onclick = function() {
   closeModal(modalACiibo);
 }
 
-/********** music visualizer **********/
+/********** snake game **********/
 // Get the modal, display it when clicked
 var modalSnakeGame = document.getElementById("modal-snake-game");
 var imageSnakeGame = document.getElementById("image-snake-game");
