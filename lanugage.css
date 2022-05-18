@@ -131,3 +131,23 @@
     color: rgb(0, 121, 217);
     border: 1px solid rgb(0, 121, 217);
 }
+
+.react {
+    color: rgb(97, 219, 251);
+    border: 1px solid rgb(97, 219, 251);
+}
+
+.heroku {
+    color: rgb(103, 98, 166);
+    border: 1px solid rgb(103, 98, 166);
+}
+
+.discord {
+    color: rgb(114, 137, 218);
+    border: 1px solid rgb(114, 137, 218);;
+}
+
+.amazon {
+    color: rgb(255 153 0);
+    border: 1px solid rgb(255 153 0);;
+}

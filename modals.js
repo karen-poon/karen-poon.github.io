@@ -1,10 +1,13 @@
-/********** music visualizer **********/
+var imageInc = 4;
+var closeInc = 5;
+
+/********** recipez **********/
 // Get the modal, display it when clicked
-var modalSnakeGame = document.getElementById("modal-snake-game");
-var imageSnakeGame = document.getElementById("image-snake-game");
-imageSnakeGame.addEventListener("click", function(){
-  displayBlock(modalSnakeGame);
-  images = document.getElementsByClassName("images-snake-game");
+var modalRecipEZ = document.getElementById("modal-recipez");
+var imageRecipEZ = document.getElementById("image-recipez");
+imageRecipEZ.addEventListener("click", function(){
+  displayBlock(modalRecipEZ);
+  images = document.getElementsByClassName("images-recipez");
   slideIndex = 1;
   document.getElementsByClassName("prev")[0].onclick = function() {
     moveImages(-1);
@@ -15,7 +18,105 @@ imageSnakeGame.addEventListener("click", function(){
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeSnakeGame = document.getElementsByClassName("close")[0];
+var closeRecipEZ = document.getElementsByClassName("close")[0];
+closeRecipEZ.onclick = function() {
+  closeModal(modalRecipEZ);
+}
+
+/********** capstone **********/
+// Get the modal, display it when clicked
+var modalCapstone = document.getElementById("modal-capstone");
+var imageCapstone = document.getElementById("image-capstone");
+imageCapstone.addEventListener("click", function(){
+  displayBlock(modalCapstone);
+  images = document.getElementsByClassName("images-capstone");
+  slideIndex = 1;
+  showImage(slideIndex);
+});
+// close the modal after clicking "x"
+var closeACiibo = document.getElementsByClassName("close")[1];
+closeACiibo.onclick = function() {
+  closeModal(modalCapstone);
+}
+
+/********** bokeh **********/
+// Get the modal, display it when clicked
+var modalBokeh = document.getElementById("modal-bokeh");
+var imageBokeh = document.getElementById("image-bokeh");
+imageBokeh.addEventListener("click", function(){
+  displayBlock(modalBokeh);
+  images = document.getElementsByClassName("images-bokeh");
+  slideIndex = 1;
+  document.getElementsByClassName("prev")[1].onclick = function() {
+    moveImages(-1);
+  }
+  document.getElementsByClassName("next")[1].onclick = function() {
+    moveImages(1);
+  }
+  showImage(slideIndex);
+});
+// close the modal after clicking "x"
+var closeACiibo = document.getElementsByClassName("close")[2];
+closeACiibo.onclick = function() {
+  closeModal(modalBokeh);
+}
+
+/********** UofT Planning and Exploration Tool **********/
+// Get the modal, display it when clicked
+var modalPET = document.getElementById("modal-pet");
+var imagePET = document.getElementById("image-pet");
+imagePET.addEventListener("click", function(){
+  displayBlock(modalPET);
+  images = document.getElementsByClassName("images-pet");
+  slideIndex = 1;
+  showImage(slideIndex);
+});
+// close the modal after clicking "x"
+var closePET = document.getElementsByClassName("close")[3];
+closePET.onclick = function() {
+  closeModal(modalPET);
+}
+
+/********** aciibo **********/
+// Get the modal, display it when clicked
+var modalACiibo = document.getElementById("modal-aciibo");
+var imageACiibo = document.getElementById("image-aciibo");
+imageACiibo.addEventListener("click", function(){
+  displayBlock(modalACiibo);
+  images = document.getElementsByClassName("images-aciibo");
+  slideIndex = 1;
+  document.getElementsByClassName("prev")[2].onclick = function() {
+    moveImages(-1);
+  }
+  document.getElementsByClassName("next")[2].onclick = function() {
+    moveImages(1);
+  }
+  showImage(slideIndex);
+});
+// close the modal after clicking "x"
+var closeACiibo = document.getElementsByClassName("close")[4];
+closeACiibo.onclick = function() {
+  closeModal(modalACiibo);
+}
+
+/********** music visualizer **********/
+// Get the modal, display it when clicked
+var modalSnakeGame = document.getElementById("modal-snake-game");
+var imageSnakeGame = document.getElementById("image-snake-game");
+imageSnakeGame.addEventListener("click", function(){
+  displayBlock(modalSnakeGame);
+  images = document.getElementsByClassName("images-snake-game");
+  slideIndex = 1;
+  document.getElementsByClassName("prev")[0+imageInc].onclick = function() {
+    moveImages(-1);
+  }
+  document.getElementsByClassName("next")[0+imageInc].onclick = function() {
+    moveImages(1);
+  }
+  showImage(slideIndex);
+});
+// close the modal after clicking "x"
+var closeSnakeGame = document.getElementsByClassName("close")[0+closeInc];
 closeSnakeGame.onclick = function() {
   closeModal(modalSnakeGame);
 }
@@ -29,16 +130,16 @@ imageEcon.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-econ");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[1].onclick = function() {
+  document.getElementsByClassName("prev")[1+imageInc].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[1].onclick = function() {
+  document.getElementsByClassName("next")[1+imageInc].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeEcon = document.getElementsByClassName("close")[1];
+var closeEcon = document.getElementsByClassName("close")[1+closeInc];
 closeEcon.onclick = function() {
   closeModal(modalEcon);
 }
@@ -52,16 +153,16 @@ imageAgeEst.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-age");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[2].onclick = function() {
+  document.getElementsByClassName("prev")[2+imageInc].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[2].onclick = function() {
+  document.getElementsByClassName("next")[2+imageInc].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeAgeEst = document.getElementsByClassName("close")[2];
+var closeAgeEst = document.getElementsByClassName("close")[2+closeInc];
 closeAgeEst.onclick = function() {
   closeModal(modalAgeEst);
 }
@@ -75,16 +176,16 @@ imageUtek2020.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-utek2020");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[3].onclick = function() {
+  document.getElementsByClassName("prev")[3+imageInc].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[3].onclick = function() {
+  document.getElementsByClassName("next")[3+imageInc].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeUtek2020 = document.getElementsByClassName("close")[3];
+var closeUtek2020 = document.getElementsByClassName("close")[3+closeInc];
 closeUtek2020.onclick = function() {
   closeModal(modalUtek2020);
 }
@@ -98,16 +199,16 @@ imageSeek2019.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-seek2019");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[4].onclick = function() {
+  document.getElementsByClassName("prev")[4+imageInc].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[4].onclick = function() {
+  document.getElementsByClassName("next")[4+imageInc].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeSeek2019 = document.getElementsByClassName("close")[4];
+var closeSeek2019 = document.getElementsByClassName("close")[4+closeInc];
 closeSeek2019.onclick = function() {
   closeModal(modalSeek2019);
 }
@@ -121,16 +222,16 @@ imageUtrahacks.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-utrahacks");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[5].onclick = function() {
+  document.getElementsByClassName("prev")[5+imageInc].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[5].onclick = function() {
+  document.getElementsByClassName("next")[5+imageInc].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeUtrahacks = document.getElementsByClassName("close")[5];
+var closeUtrahacks = document.getElementsByClassName("close")[5+closeInc];
 closeUtrahacks.onclick = function() {
   closeModal(modalUtrahacks);
 }
@@ -144,16 +245,16 @@ imageMapper.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-mapper");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[6].onclick = function() {
+  document.getElementsByClassName("prev")[6+imageInc].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[6].onclick = function() {
+  document.getElementsByClassName("next")[6+imageInc].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeMapper = document.getElementsByClassName("close")[6];
+var closeMapper = document.getElementsByClassName("close")[6+closeInc];
 closeMapper.onclick = function() {
   closeModal(modalMapper);
 }
@@ -169,7 +270,7 @@ imageSayColour.addEventListener("click", function(){
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeSayColour = document.getElementsByClassName("close")[7];
+var closeSayColour = document.getElementsByClassName("close")[7+closeInc];
 closeSayColour.onclick = function() {
   closeModal(modalSayColour);
 }
@@ -183,16 +284,16 @@ imageSokoban.addEventListener("click", function(){
   // navigates the image when "<" or ">" is pressed
   images = document.getElementsByClassName("images-sokoban");
   slideIndex = 1;
-  document.getElementsByClassName("prev")[7].onclick = function() {
+  document.getElementsByClassName("prev")[7+imageInc].onclick = function() {
     moveImages(-1);
   }
-  document.getElementsByClassName("next")[7].onclick = function() {
+  document.getElementsByClassName("next")[7+imageInc].onclick = function() {
     moveImages(1);
   }
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeSokoban = document.getElementsByClassName("close")[8];
+var closeSokoban = document.getElementsByClassName("close")[8+closeInc];
 closeSokoban.onclick = function() {
   closeModal(modalSokoban);
 }
@@ -218,7 +319,7 @@ imageMeow.addEventListener("click", function(){
   showImage(slideIndex);
 });
 // close the modal after clicking "x"
-var closeMeow = document.getElementsByClassName("close")[999999999]; // CHANGE THIS NUMBER TO THE NEXT NUMBER
+var closeMeow = document.getElementsByClassName("close")[999999999];
 closeMapper.onclick = function() {
   closeModal(modalMeow);
 }
@@ -227,7 +328,12 @@ closeMapper.onclick = function() {
 
 // if user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modalSnakeGame) {closeModal(modalSnakeGame);}
+  if (event.target == modalRecipEZ) {closeModal(modalRecipEZ);}
+  else if (event.target == modalBokeh) {closeModal(modalBokeh);}
+  else if (event.target == modalCapstone) {closeModal(modalCapstone);}
+  else if (event.target == modalPET) {closeModal(modalPET);}
+  else if (event.target == modalACiibo) {closeModal(modalACiibo);}
+  else if (event.target == modalSnakeGame) {closeModal(modalSnakeGame);}
   else if (event.target == modalEcon) {closeModal(modalEcon);}
   else if (event.target == modalAgeEst) {closeModal(modalAgeEst);}
   else if (event.target == modalUtek2020) {closeModal(modalUtek2020);}
